@@ -15,7 +15,7 @@ export default function Navbar({ showMenus, setShowMenus }: Props) {
         <Logo />
         <h2>Lorem</h2>
       </div>
-      <div className="md:hidden" onClick={() => setShowMenus(!showMenus)}>
+      <div className="sm:hidden" onClick={() => setShowMenus(!showMenus)}>
         {showMenus ? <Cross /> : <Menu />}
       </div>
     </nav>

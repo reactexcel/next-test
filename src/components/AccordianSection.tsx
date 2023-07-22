@@ -13,7 +13,7 @@ type Props = {
 const Accordian = ({ item, handleAccordian }: Props) => {
   return (
     <div className=" flex justify-center">
-      <div className="w-[56%]">
+      <div className="w-[80%]">
         <div className="flex justify-between font-bold">
           <h1>{item?.title}</h1>
           <button onClick={() => handleAccordian(item.id)}>

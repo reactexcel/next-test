@@ -4,7 +4,7 @@ import CircleImgae from "@/assests/images/CircleImg.png";
 
 const About = () => {
   return (
-    <div className=" h-24 text-white flex mx-16 justify-between h-96 mt-10">
+    <div className=" hidden  h-24 text-white sm:flex mx-16 justify-between h-96 mt-10">
       <div className={`w-96 relative`}>
         <h1 className="font-bold text-6xl max-w-0">ABOUT US</h1>
         <h1>Lorem</h1>

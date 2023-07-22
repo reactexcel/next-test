@@ -8,11 +8,11 @@ import imgTwo from "@/assests/images/imgTwo.png";
 
 const Lorems = () => {
   return (
-    <div className=" mx-16 mt-5 text-white">
-      <h1 className=" font-bold text-6xl">LOREM IPSUM</h1>
+    <div className=" mx-5 sm:mx-16 mt-5 text-white ">
+      <h1 className=" font-bold text-6xl ">LOREM IPSUM</h1>
 
-      <div className="flex gap-2">
-        <div className=" w-80 ">
+      <div className="flex flex-col gap-2 sm:flex-row ">
+        <div className="sm:w-80 ">
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
           <h1 className="text-xl font-bold">DOLOR SIT</h1>
           <p className=" text-slate-50">
@@ -24,9 +24,11 @@ const Lorems = () => {
             Repudiandae doloribus quod totam. Omnis, animi repellendus?
           </p>
           <AddIcon />
-          {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
+          {false ? (
+            <Image src={imgOne} alt="image" className="sm:w-80" />
+          ) : null}
         </div>
-        <div className=" w-80 ">
+        <div className=" sm:w-80 ">
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
           <h1 className="text-xl font-bold">LOREM IPSUM DOLOR SIT</h1>
           <p className=" text-slate-50">
@@ -40,8 +42,8 @@ const Lorems = () => {
           <MenuIcon />
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
         </div>
-        <div className=" w-80 ">
-          {true ? <Image src={imgOne} alt="image" className="w-80" /> : null}
+        <div className=" sm:w-80 ">
+          {true ? <Image src={imgOne} alt="image" className="sm:w-80" /> : null}
           <h1 className="text-xl font-bold">DOLOR SIT</h1>
           <p className=" text-slate-50">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
@@ -52,12 +54,14 @@ const Lorems = () => {
             Repudiandae doloribus quod totam. Omnis, animi repellendus?
           </p>
           <CircleIcon />
-          {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
+          {false ? (
+            <Image src={imgOne} alt="image" className="sm:w-80" />
+          ) : null}
         </div>
       </div>
 
-      <div className="flex gap-2 mt-4">
-        <div className=" w-80 ">
+      <div className="flex flex-col sm:flex-row gap-2 mt-4">
+        <div className=" sm:w-80 ">
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
           <h1 className="text-xl font-bold">DOLOR SIT</h1>
           <p className=" text-slate-50">
@@ -71,7 +75,7 @@ const Lorems = () => {
           <AddIcon />
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
         </div>
-        <div className=" w-80 ">
+        <div className=" sm:w-80 ">
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
           <h1 className="text-xl font-bold">LOREM IPSUM DOLOR SIT</h1>
           <p className=" text-slate-50">
@@ -83,9 +87,9 @@ const Lorems = () => {
             Repudiandae doloribus quod totam. Omnis, animi repellendus?
           </p>
           <MenuIcon />
-          {true ? <Image src={imgTwo} alt="image" className="w-80" /> : null}
+          {true ? <Image src={imgTwo} alt="image" className="sm:w-80" /> : null}
         </div>
-        <div className=" w-80 ">
+        <div className=" sm:w-80 ">
           {false ? <Image src={imgOne} alt="image" className="w-80" /> : null}
           <h1 className="text-xl font-bold">DOLOR SIT</h1>
           <p className=" text-slate-50">

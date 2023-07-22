@@ -55,23 +55,30 @@ export default function Home() {
     <div className="bg-black h-[100%] pb-20">
       <Navbar showMenus={showMenus} setShowMenus={setShowMenus} />
       <div>
-        {showMenus ? <Sidebar /> : null}
-        <Lorems />
-        <About />
+        {showMenus ? (
+          <Sidebar />
+        ) : (
+          <>
+            <Lorems />
+            <About />
 
-        <Lorems />
-        <div className=" mx-16 text-white flex flex-col ">
-          <h1 className=" font-bold text-6xl self-center">LOREM IPSUM DOLOR</h1>
-          <div>
-            {lorems.map((item) => (
-              <Accordian
-                item={item}
-                key={item.id}
-                handleAccordian={handleAccordian}
-              />
-            ))}
-          </div>
-        </div>
+            <Lorems />
+            <div className="mx-5 sm:mx-16 text-white flex flex-col mt-10 ">
+              <h1 className=" font-bold text-4xl sm:text-6xl self-center">
+                LOREM IPSUM DOLOR
+              </h1>
+              <div className="mt-5">
+                {lorems.map((item) => (
+                  <Accordian
+                    item={item}
+                    key={item.id}
+                    handleAccordian={handleAccordian}
+                  />
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
